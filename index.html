@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comments service app</title>
+  <link rel="stylesheet" href="./normalize.css" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1 class="header__title">Comments service app</h1>
+  </header>
+
+  <main class="app">
+    <div class="app__form-container">
+      <h2 class="form-title">Leave your comment</h2>
+
+      <form class="form">
+        <label class="form__label" for="name">
+          <span class="label-text">Enter name</span>
+          <input class="form__input" type="text" name="name" id="name" />
+        </label>
+
+        <label class="form__label" for="avatar">
+          <span class="label-text">Enter avatar url</span>
+          <input class="form__input" type="text" name="avatar" id="avatar" />
+        </label>
+
+        <label class="form__label" for="comment">
+          <span class="label-text">Enter comment</span>
+          <textarea class="form__textarea" name="comment" id="comment" cols="30" rows="5"></textarea>
+        </label>
+
+        <input class="form__submit" type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <div class="app__comments-container">
+      <h2 class="comments-title">Chat</h2>
+      <div class="comments-list">
+<!-- 
+        <div class="comment"">
+          <div class=" comment__user-info">
+            <div class="user-info__avatar"
+            style="background-image: url('https://klike.net/uploads/posts/2019-03/1551511801_1.jpg');">
+            </div>
+            <div class="user-info__name">Alex</div>
+          </div>
+
+          <div class="comment__text">Hello, world!</div>
+
+          <hr />
+        </div>
+
+        <div class="comment"">
+          <div class=" comment__user-info">
+            <div 
+              class="user-info__avatar"
+              style="background-image: url('https://otkrit-ka.ru/uploads/posts/2021-09/krasivye-foto-kartinki-na-avatarku-dlja-parnej-i-muzhchin-1.jpg');">
+            </div>
+            <div class="user-info__name">Ivan</div>
+          </div>
+
+          <div class="comment__text">JavaScript is the best programming language!</div>
+
+          <hr />
+        </div>
+
+        <div class="comment"">
+          <div class=" comment__user-info">
+            <div
+              class="user-info__avatar"
+              style="background-image: url('https://i.pinimg.com/736x/2e/e9/e6/2ee9e6113f53f68d5e070b8cd79a4cb1.jpg');">
+            </div>
+            <div class="user-info__name">Anna</div>
+          </div>
+
+          <div class="comment__text">I'm learning JavaScript.</div>
+
+          <hr />
+        </div> -->
+
+      </div>
+    </div>
+  </main>
+
+  <script src="./index.js" type="module"></script>
+</body>
+
+</html>

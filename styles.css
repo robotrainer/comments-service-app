@@ -1,0 +1,154 @@
+body {
+  width: 100vw;
+  background-color: var(--color-black-bluse);
+  font-family: sans-serif;
+  overflow-x: hidden;
+
+  --color-blue: #3282b8;
+  --color-black-bluse: #1b262c;
+  --color-white: #ffff;
+  --p-app: 30px;
+}
+
+hr {
+  height: 0;
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-top: 2px dashed var(--color-blue);
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 2px dashed var(--color-blue);
+  -webkit-text-fill-color: var(--color-blue);
+  -webkit-box-shadow: 0 0 0px 1000px var(--color-black-bluse) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/*Change text in autofill textbox*/
+input:-webkit-autofill {
+  -webkit-text-fill-color: var(--color-white) !important;
+}
+
+.header__title {
+  color: var(--color-blue);
+  padding: 0 var(--p-app);
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  height: 100%;
+  width: calc(100% - var(--p-app) * 2);
+  padding: 0 var(--p-app);
+}
+
+.app__comments-container,
+.app__form-container {
+  width: 50%;
+}
+
+.app__form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title,
+.comments-title {
+  color: var(--color-blue);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.form__input,
+.form__textarea {
+  padding: 10px;
+  border: 2px dashed var(--color-blue);
+  background-color: var(--color-black-bluse);
+  color: var(--color-white);
+  font-size: 16px;
+}
+
+.form__textarea {
+  resize: none;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+  outline: none;
+}
+
+.form__submit {
+  height: 36px;
+  width: 150px;
+  border: none;
+  outline: none;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.label-text {
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.comment__user-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.user-info__avatar {
+  height: 50px;
+  width: 50px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.user-info__name {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--color-blue);
+}
+
+.comment__text {
+  font-size: 16px;
+  color: var(--color-white);
+}
